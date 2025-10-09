@@ -2,10 +2,10 @@ package Queue;
 
 import java.util.NoSuchElementException;
 
-public class LinearQueue {
+public class LinearQueue_LC622 {
     private int front, rear;
     private int[] queue;
-    public LinearQueue(int size)
+    public LinearQueue_LC622(int size)
     {
         front=rear=-1;
         this.queue=new int[size];
@@ -61,7 +61,7 @@ public class LinearQueue {
 
     // Main method to test the queue
     public static void main(String[] args) {
-        LinearQueue q = new LinearQueue(5);
+        LinearQueue_LC622 q = new LinearQueue_LC622(5);
 
         q.enqueue(10);
         q.enqueue(20);
