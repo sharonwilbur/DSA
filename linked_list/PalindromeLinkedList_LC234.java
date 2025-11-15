@@ -15,7 +15,7 @@ public class PalindromeLinkedList_LC234 {
         ListNode left1=reverse(right);
         while(left!=null&&left1!=null)
         {
-            if(left!=left1) return false;
+            if(left.val!=left1.val) return false;
             left=left.next;
             left1=left1.next;
         }
