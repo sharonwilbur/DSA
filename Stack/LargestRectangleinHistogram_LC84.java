@@ -34,3 +34,11 @@ public class LargestRectangleinHistogram_LC84 {
         // Expected Output: 10
     }
 }
+
+//  we use :
+//              int height=heights[stack.pop()];
+//              int width=stack.isEmpty()? i:i-stack.peek()-1;
+// instead of :
+//             int height=heights[stack.peek()];
+//             int width=stack.isEmpty()? i:i-stack.pop();
+// because when calculating width we should consider the area behind the height popped by the stack also.
